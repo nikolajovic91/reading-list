@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'typography';
+@import 'nav';
+
+
+
+@media(max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+
+.book {
+  width: 80%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10px auto;
+  background-color: $color-main;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+  & p {
+    margin: 0;
+  }
+}
+
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 80%;
+  display: block;
+}
+
+input[type="submit"] {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+}
+
+@media(max-width: 450px) {
+  body {
+    width: 100%;
+  }
+
+  nav {
+    & h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+  }
+
+  .book {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+  
+  input[type="submit"] {
+    width: 90%;
+  }
+}
+
